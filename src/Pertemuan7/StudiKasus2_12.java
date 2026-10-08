@@ -35,7 +35,32 @@ public class StudiKasus2_12 {
                     System.out.println("Alasan : Dokumen tidak lengkap (kurang "
                             + (4 - dokumen) + " dokumen).");
                 }
+            } else {
+                System.out.println("Status : Tidak memperoleh dana penghargaan.");
+                System.out.println("Alasan : Hanya Juara 1, 2, atau 3 yang memperoleh dana.");
             }
+            
+        } else if (jenisKegiatan.equalsIgnoreCase("PKM")) {
+            System.out.print("Jumlah dokumen yang diupload : ");
+            dokumen = sc.nextInt();
+            System.out.print("Status pendanaan PKM (1 = lolos, 0 = tidak lolos) : ");
+            pendanaan = sc.nextInt();
+            if (pendanaan == 1) {
+                if (dokumen == 4) {
+                    System.out.println("Status : Berhak memperoleh dana penghargaan.");
+                    System.out.println("Alasan : PKM lolos pendanaan dan dokumen lengkap.");
+                } else {
+                    System.out.println("Status : Dana penghargaan tidak diberikan.");
+                    System.out.println("Alasan : Dokumen tidak lengkap (kurang "
+                            + (4 - dokumen) + " dokumen).");
+                }
+            } else {
+                System.out.println("Status : Tidak memperoleh dana penghargaan.");
+                System.out.println("Alasan : PKM tidak lolos pendanaan.");
+            }
+        } else {
+            System.out.println("Status : Tidak memperoleh dana penghargaan.");
+            System.out.println("Alasan : Jenis kegiatan tidak termasuk ketentuan.");
         }
     }
 }
