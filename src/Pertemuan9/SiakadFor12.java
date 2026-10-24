@@ -1,3 +1,5 @@
+// Percobaan 1: Nilai SIAKAD (FOR) Jumlah mahasiswa = 8 + (12 mod 5) = 8 + 2 =10, Batas kelulusan = 55+ (12 mod 11) = 55 + 1 = 56
+
 package Pertemuan9;
 
 import java.util.Scanner;
