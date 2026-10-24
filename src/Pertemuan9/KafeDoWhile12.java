@@ -1,3 +1,4 @@
+// hargaKopi=12000, hargaTeh=5000, hargaRoti=15000
 package Pertemuan9;
 
 import java.util.Scanner;
@@ -8,8 +9,8 @@ public class KafeDoWhile12 {
 
         int kopi, teh, roti;
         int hargaKopi = 12000;
-        int hargaTeh = 7000; 
-        int hargaRoti = 20000;
+        int hargaTeh = 5000; 
+        int hargaRoti = 15000;
         int totalHarga;
         String namaPelanggan;
 
