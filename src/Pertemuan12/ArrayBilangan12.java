@@ -10,7 +10,7 @@ public class ArrayBilangan12 {
         int[] bil = {12, 20, -6, 32};
 
         for (int i = 0; i < bil.length; i++) {
-            System.out.println("bill[" + i + "] = " + bil[i]);     
+            System.out.println("bil[" + i + "] = " + bil[i] +", double = " + (bil[i] * 2));  
         }
         for (int nilai : bil) {
             System.out.println(nilai);
