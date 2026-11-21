@@ -8,6 +8,7 @@ public class ArrayRataNilai12 {
         
         int[] nilaiMhs = new int[10];
         int total = 0;
+        int jumlahLulus = 0;
         double rata2;
 
         for (int i = 0; i < nilaiMhs.length; i++) {
@@ -21,12 +22,24 @@ public class ArrayRataNilai12 {
 
         int tertinggi = nilaiMhs[0];
         int terendah = nilaiMhs[0];
+
         for (int i = 1; i < nilaiMhs.length; i++) {
-            if (nilaiMhs[i] > tertinggi) tertinggi = nilaiMhs[i]; 
-            if (nilaiMhs[i] < terendah) terendah = nilaiMhs[i];
+            if (nilaiMhs[i] > tertinggi) {
+                tertinggi = nilaiMhs[i];
+            }
+            if (nilaiMhs[i] < terendah) {
+                terendah = nilaiMhs[i];
+            }
         }
         System.out.println("Nilai tertinggi: " + tertinggi);
-        System.out.println("Nilai terendah: " + terendah);     
+        System.out.println("Nilai terendah: " + terendah);  
+        
+        for (int i = 0; i < nilaiMhs.length; i++) {
+            if (nilaiMhs[i] > 70) {
+                jumlahLulus++;
+            }
+        }
+        System.out.println("Jumlah mahasiswa lulus: " + jumlahLulus);
         
         if (rata2 >= 85) {
             System.out.println("Predikat: SANGAT BAIK");
