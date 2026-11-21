@@ -31,22 +31,9 @@ public class ArrayRataNilai12 {
                 terendah = nilaiMhs[i];
             }
         }
+        System.out.println("Total nilai: " + total);
+        System.out.println("Rata rata: " + rata2);
         System.out.println("Nilai tertinggi: " + tertinggi);
         System.out.println("Nilai terendah: " + terendah);  
-        
-        for (int i = 0; i < nilaiMhs.length; i++) {
-            if (nilaiMhs[i] > 70) {
-                jumlahLulus++;
-            }
-        }
-        System.out.println("Jumlah mahasiswa lulus: " + jumlahLulus);
-        
-        if (rata2 >= 85) {
-            System.out.println("Predikat: SANGAT BAIK");
-        } else if (rata2 >= 70) {
-            System.out.println("Predikat: BAIK");
-        } else {
-            System.out.println("Predikat: PERLU PENDAMPINGAN");
-        }
     }
 }
