@@ -10,9 +10,11 @@ import java.util.Arrays;
 public class SortNilai12 {
     public static void main(String[] args) {
         
-         int[] nilai = {32, 47, 24, 62, 12, 37};
+        int[] nilai = {32, 47, 24, 62, 12, 37};
+        System.out.println("Sebelum diurutkan: " + Arrays.toString(nilai));
+
         for (int i = 0; i < nilai.length - 1 ; i++) {
-            for (int j = 0; j < nilai.length - 1; j++) {
+            for (int j = 0; j < nilai.length - 1 - i; j++) {
                 if (nilai[j] > nilai[j + 1]) {
                     int temp = nilai[j];
                     nilai[j] = nilai[j + 1];
@@ -20,6 +22,6 @@ public class SortNilai12 {
                 }
             }
         }
-    System.out.println(Arrays.toString(nilai));
+    System.out.println("Setelah diurutkan: " + Arrays.toString(nilai));
     }
 }
